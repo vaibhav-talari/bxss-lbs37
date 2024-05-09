@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "name": "testa--name",
+      "email": "email@emi.com"
+    },
+    {
+      "name": "<script>alert(\"hello-test\")</script>",
+      "email": "email@email.com"
+    }
+  ]
+}
