@@ -12,7 +12,7 @@ app.get('/callback', (req, res) => {
     id: req.query.id || '',
     title: req.query.title || 'Untitled',
     protocol: req.query.protocol || '',
-    domain: req.query.hostname || '',
+    domain: req.query.domain || '',
     port: req.query.port || '',
     pathname: req.query.pathname || '',
     navigator_ua: req.query.navigator_ua || '',

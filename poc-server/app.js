@@ -35,29 +35,26 @@ app.post('/user', (req, res) => {
     res.send('User added successfully');
 });
 
-// Endpoint to retrieve users from the database and display in an HTML table
-app.get('/users', (req, res) => {
-    const users = db.get('users').value();
-
-    // Generate HTML table dynamically
-    let html = '<table border="1">';
-    html += '<tr><th>Name</th><th>Email</th></tr>';
-    users.forEach(user => {
-        html += `<tr><td>${user.name}</td><td>${user.email}</td></tr>`;
-    });
-    html += '</table>';
-
-    // Send HTML response
-    res.send(html);
-});
-
 // Endpoint to serve the HTML form
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Endpoint to return users in table format
+app.get('/users', (req, res) => {
+    const users = db.get('users').value();
+    let html = '<!DOCTYPE html><html><head><title>Users List</title></head><body>';
+    html += '<h1>Users List</h1><table border="1">';
+    html += '<tr><th>Name</th><th>Email</th></tr>';
+    users.forEach(user => {
+        html += `<tr><td>${user.name}</td><td>${user.email}</td></tr>`;
+    });
+    html += '</table></body></html>';
+    res.send(html);
+});
+
 // Start the server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`Server is running on a port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
