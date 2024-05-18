@@ -37,7 +37,7 @@ plt.title('Polyglot Analysis Plot')
 plt.xticks(df['x_plot_continuous'], df['test_id'])
 
 # Set y-axis ticks and labels, including the new 'Any polyglot' line
-plt.yticks([0.5] + list(range(1, 9)), [f'Ultimate Polyglot ({any_polyglot_count})'] + [f'polyglot_{i}' for i in range(1, 9)], fontsize=15)
+plt.yticks([0.5] + list(range(1, 9)), [f'Combined ({any_polyglot_count})'] + [f'polyglot_{i}' for i in range(1, 9)], fontsize=15)
 
 # Rotate x-axis labels vertically
 plt.xticks(rotation=90)
