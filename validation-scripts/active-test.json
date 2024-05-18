@@ -1,0 +1,668 @@
+[
+        {
+            "test_id": 1,
+            "path": "/address/location.hash/assign#",
+            "action": "VISIT",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 2,
+            "path": "/address/location.hash/eval#",
+            "action": "VISIT",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 3,
+            "path": "/address/location.hash/replace#",
+            "action": "VISIT",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 4,
+            "path": "/address/location.hash/setTimeout#",
+            "action": "VISIT",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 5,
+            "path": "/address/location.hash/function#",
+            "action": "VISIT",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 6,
+            "path": "/address/location.hash/onclickSetAttribute#",
+            "action": "CLICK_DIV_TAG",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 7,
+            "path": "/address/location.hash/onclickAddEventListener#",
+            "action": "CLICK_DIV_TAG",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 8,
+            "path": "/address/location.hash/jshref#",
+            "action": "CLICK_A_TAG",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 9,
+            "path": "/address/location.hash/inlineevent#",
+            "action": "CLICK_DIV_TAG",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 10,
+            "path": "/address/location.hash/formaction#",
+            "action": "CLICK_INPUT_TAG",
+            "category": "Address DOM XSS"
+        },
+        {
+            "test_id": 31,
+            "path": "/dom/toxicdom/document/cookie_set/eval",
+            "action": "COOKIE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 32,
+            "path": "/dom/toxicdom/document/cookie_set/innerHtml",
+            "action": "COOKIE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 33,
+            "path": "/dom/toxicdom/document/cookie_set/documentWrite",
+            "action": "COOKIE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 34,
+            "path": "/dom/toxicdom/document/cookie/eval",
+            "action": "COOKIE2",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 38,
+            "path": "/dom/toxicdom/window/name/eval",
+            "action": "WINDOW_NAME",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 39,
+            "path": "/dom/toxicdom/window/name/innerHtml",
+            "action": "WINDOW_NAME",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 40,
+            "path": "/dom/toxicdom/window/name/documentWrite",
+            "action": "WINDOW_NAME",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 41,
+            "path": "/dom/toxicdom/localStorage/array/eval",
+            "action": "LOCAL_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 42,
+            "path": "/dom/toxicdom/localStorage/function/eval",
+            "action": "LOCAL_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 43,
+            "path": "/dom/toxicdom/localStorage/function/innerHtml",
+            "action": "LOCAL_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 44,
+            "path": "/dom/toxicdom/localStorage/function/documentWrite",
+            "action": "LOCAL_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 45,
+            "path": "/dom/toxicdom/localStorage/property/documentWrite",
+            "action": "LOCAL_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 46,
+            "path": "/dom/toxicdom/external/localStorage/array/eval",
+            "action": "LOCAL_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 47,
+            "path": "/dom/toxicdom/external/localStorage/function/eval",
+            "action": "LOCAL_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 48,
+            "path": "/dom/toxicdom/sessionStorage/function/innerHtml",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 49,
+            "path": "/dom/toxicdom/sessionStorage/array/eval",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 50,
+            "path": "/dom/toxicdom/sessionStorage/function/eval",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 51,
+            "path": "/dom/toxicdom/external/sessionStorage/function/innerHtml",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 52,
+            "path": "/dom/toxicdom/sessionStorage/function/documentWrite",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 53,
+            "path": "/dom/toxicdom/sessionStorage/property/documentWrite",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 54,
+            "path": "/dom/toxicdom/external/sessionStorage/array/eval",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 55,
+            "path": "/dom/toxicdom/external/sessionStorage/function/eval",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 56,
+            "path": "/dom/toxicdom/external/sessionStorage/function/documentWrite",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 57,
+            "path": "/dom/toxicdom/external/sessionStorage/property/documentWrite",
+            "action": "SESSION_STORAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 58,
+            "path": "/dom/toxicdom/postMessage/eval",
+            "action": "POST_MESSAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 59,
+            "path": "/dom/toxicdom/postMessage/innerHtml",
+            "action": "JSON_HTML_MESSAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 61,
+            "path": "/dom/toxicdom/postMessage/complexMessageDocumentWriteEval",
+            "action": "COMPLEX_MESSAGE",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 64,
+            "path": "/dom/eventtriggering/document/formSubmission/eval",
+            "action": "FORM_WITH_INPUT",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 65,
+            "path": "/dom/eventtriggering/document/formSubmission/innerHtml",
+            "action": "FORM_WITH_INPUT",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 66,
+            "path": "/dom/eventtriggering/document/formSubmission/documentWrite",
+            "action": "FORM_WITH_INPUT",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 67,
+            "path": "/dom/eventtriggering/document/inputTyping/eval",
+            "action": "TYPING_EVENT",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 68,
+            "path": "/dom/eventtriggering/document/inputTyping/innerHtml",
+            "action": "TYPING_EVENT",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 69,
+            "path": "/dom/eventtriggering/document/inputTyping/documentWrite",
+            "action": "TYPING_EVENT",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 71,
+            "path": "/dom/dompropagation#",
+            "action": "VISIT",
+            "category": "DOM XSS"
+        },
+        {
+            "test_id": 72,
+            "path": "/escape/serverside/escapeHtml/tagname?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 74,
+            "path": "/escape/serverside/escapeHtml/attribute_unquoted?q=",
+            "action": "CLICK_TAG_TAG",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 75,
+            "path": "/escape/serverside/escapeHtml/attribute_singlequoted?q=",
+            "action": "CLICK_TAG_TAG",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 76,
+            "path": "/escape/serverside/escapeHtml/attribute_quoted?q=",
+            "action": "CLICK_TAG_TAG",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 77,
+            "path": "/escape/serverside/escapeHtml/attribute_name?q=",
+            "action": "CLICK_TAG_TAG",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 78,
+            "path": "/escape/serverside/escapeHtml/js_assignment?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 80,
+            "path": "/escape/serverside/escapeHtml/js_eval?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 82,
+            "path": "/escape/serverside/escapeHtml/js_quoted_string?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 83,
+            "path": "/escape/serverside/escapeHtml/js_singlequoted_string?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 84,
+            "path": "/escape/serverside/escapeHtml/js_slashquoted_string?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 85,
+            "path": "/escape/serverside/escapeHtml/js_comment?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 89,
+            "path": "/escape/serverside/escapeHtml/css_import?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 90,
+            "path": "/escape/js/escape?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 91,
+            "path": "/escape/js/encodeURIComponent?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 92,
+            "path": "/escape/js/html_escape?q=",
+            "action": "VISIT",
+            "category": "Escaped XSS"
+        },
+        {
+            "test_id": 93,
+            "path": "/reflected/parameter/body?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 94,
+            "path": "/reflected/parameter/head?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 95,
+            "path": "/reflected/parameter/title?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 96,
+            "path": "/reflected/parameter/body_comment?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 97,
+            "path": "/reflected/parameter/tagname?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 98,
+            "path": "/reflected/parameter/attribute_unquoted?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 99,
+            "path": "/reflected/parameter/attribute_singlequoted?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 100,
+            "path": "/reflected/parameter/attribute_quoted?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 101,
+            "path": "/reflected/parameter/attribute_name?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 102,
+            "path": "/reflected/parameter/body/400?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 103,
+            "path": "/reflected/parameter/body/401?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 104,
+            "path": "/reflected/parameter/body/403?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 105,
+            "path": "/reflected/parameter/body/404?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 106,
+            "path": "/reflected/parameter/body/500?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 107,
+            "path": "/reflected/parameter/iframe_attribute_value?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 108,
+            "path": "/reflected/parameter/iframe_srcdoc?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 109,
+            "path": "/reflected/parameter/textarea?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 110,
+            "path": "/reflected/parameter/textarea_attribute_value?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 111,
+            "path": "/reflected/parameter/noscript?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 112,
+            "path": "/reflected/parameter/style_attribute_value?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 113,
+            "path": "/reflected/parameter/css_style?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 114,
+            "path": "/reflected/parameter/css_style_value?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 115,
+            "path": "/reflected/parameter/css_style_font_value?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 116,
+            "path": "/reflected/escapedparameter/js_eventhandler_unquoted/UNQUOTED_ATTRIBUTE?q=",
+            "action": "CLICK_DIV_TAG",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 117,
+            "path": "/reflected/escapedparameter/js_eventhandler_quoted/DOUBLE_QUOTED_ATTRIBUTE?q=",
+            "action": "CLICK_DIV_TAG",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 118,
+            "path": "/reflected/escapedparameter/js_eventhandler_singlequoted/SINGLE_QUOTED_ATTRIBUTE?q=",
+            "action": "CLICK_DIV_TAG",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 119,
+            "path": "/reflected/parameter/js_assignment?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 120,
+            "path": "/reflected/parameter/js_eval?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 121,
+            "path": "/reflected/parameter/js_quoted_string?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 122,
+            "path": "/reflected/parameter/js_singlequoted_string?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 123,
+            "path": "/reflected/parameter/js_slashquoted_string?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 124,
+            "path": "/reflected/parameter/js_comment?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 125,
+            "path": "/reflected/parameter/attribute_script?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 128,
+            "path": "/reflected/parameter/json?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 129,
+            "path": "/reflected/parameter/form",
+            "action": "FORM_WITH_INPUT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 130,
+            "path": "/reflected/filteredcharsets/body/SpaceDoubleQuoteSlashEquals?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 131,
+            "path": "/reflected/filteredcharsets/attribute_unquoted/DoubleQuoteSinglequote?q=",
+            "action": "CLICK_TAG_TAG",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 132,
+            "path": "/reflected/filteredstrings/body/caseSensitive/script?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 133,
+            "path": "/reflected/filteredstrings/body/caseSensitive/SCRIPT?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 134,
+            "path": "/reflected/filteredstrings/body/caseInsensitive/script?q=",
+            "action": "VISIT",
+            "category": "Reflected XSS"
+        },
+        {
+            "test_id": 148,
+            "path": "/tags/expression?q=",
+            "action": "VISIT",
+            "category": "Tag based XSS"
+        },
+        {
+            "test_id": 149,
+            "path": "/tags/multiline?q=",
+            "action": "VISIT",
+            "category": "Tag based XSS"
+        },
+        {
+            "test_id": 150,
+            "path": "/urldom/location/hash/a.href#",
+            "action": "CLICK_A_TAG",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 151,
+            "path": "/urldom/location/hash/document.location#",
+            "action": "VISIT",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 152,
+            "path": "/urldom/location/hash/form.action#",
+            "action": "FORM_URL_PARAM",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 153,
+            "path": "/urldom/location/hash/iframe.src#",
+            "action": "VISIT",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 154,
+            "path": "/urldom/location/hash/input.formaction#",
+            "action": "FORM_URL_PARAM",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 156,
+            "path": "/urldom/location/search/area.href?",
+            "action": "CLICK_AREA_TAG",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 157,
+            "path": "/urldom/location/search/svg.a?",
+            "action": "CLICK_A_TAG",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 158,
+            "path": "/urldom/location/search/button.formaction?",
+            "action": "CLICK_BUTTON",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 159,
+            "path": "/urldom/location/search/location.assign?",
+            "action": "VISIT",
+            "category": "URL-based DOM XSS"
+        },
+        {
+            "test_id": 160,
+            "path": "/urldom/location/search/frame.src?",
+            "action": "VISIT",
+            "category": "URL-based DOM XSS"
+        }
+    ]
