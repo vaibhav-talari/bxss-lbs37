@@ -11,18 +11,16 @@ const app = express();
 app.use(helmet.contentSecurityPolicy({
 	directives: {
 		defaultSrc: ["'self'"],
-    scriptSrc: ["'self'"], //add http://localhost:4000 to allow xss script to load
+    scriptSrc: ["'self'"],
     styleSrc: ["'self'"],
+		connectSrc: ["'self'"]
 	}
 }));
 
-// Parse requests of content-type - application/json
 app.use(bodyParser.json());
 
-// Parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Initialize database
@@ -44,13 +42,13 @@ app.post('/insecure', (req, res) => {
     res.send('User added successfully (Insecure)');
 });
 
-// Endpoint to save sanitized user input to the database (Secure)
+// Endpoint to save sanitized user input
 app.post('/secure', (req, res) => {
     const { name, email } = req.body;
     if (!name || !email) {
         return res.status(400).send('Name and email are required');
     }
-    // Sanitize user input using htmlspecialchars equivalent
+
     const sanitizedName = xss(name);
     const sanitizedEmail = xss(email);
     db.get('users')
@@ -66,6 +64,11 @@ app.get('/', (req, res) => {
 
 // Endpoint to return users in table format
 app.get('/users', (req, res) => {
+
+res.cookie('testCookie', 'some-random-value', {
+    httpOnly: true,
+});
+
     const users = db.get('users').value();
     let html = '<!DOCTYPE html><html><head><title>Users List</title></head><body>';
     html += '<h1>Users List</h1><table border="1">';

