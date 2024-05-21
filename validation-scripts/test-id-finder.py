@@ -1,6 +1,5 @@
 import json
 
-# Load JSON data from file
 with open('../bxss-lbs37/data/final-eval.json', 'r') as file:
     evalData = json.load(file)
 
@@ -10,10 +9,8 @@ with open('active-test.json', 'r') as file:
 with open('all-test.json', 'r') as file:
     allTest = json.load(file)
 
-# Extract gfr_distribution array
 gfr_distribution = evalData.get('gfr_distribution', [])
 
-# Print length of the array
 print("Length of gfr_distribution array:", len(gfr_distribution))
 
 base_urls = {item['baseUrl']: idx for idx, item in enumerate(allTest)}
@@ -26,7 +23,6 @@ path_to_test_id = {item['path']: item['test_id'] for item in activeTest}
 #        print(f'Base URL: {base_url} -> Test ID: Not found')
 
 
-# Print index and element of the array if element is 1
 for index, element in enumerate(gfr_distribution):
     if element == 1:
 	#print(f'GFR Index: {index} | Test ID: {path_to_test_id[base_url]}')
